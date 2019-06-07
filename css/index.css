@@ -67,7 +67,7 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 900px;
     margin: 0 auto;
 }
 
@@ -77,6 +77,11 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+}
+
+.top-content img {
+    width: 900px;
+    margin-bottom: 25px;
 }
 
 .top-content .text-container {
@@ -143,4 +148,21 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/*Header*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
+
+header nav a {
+    text-decoration: none;
+    margin: 48px;
+    position: relative;
+    top: 10px;
+    color: black;
 }
