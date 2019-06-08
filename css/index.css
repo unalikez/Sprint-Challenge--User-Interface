@@ -67,7 +67,7 @@ p {
 }
 
 .container {
-    width: 900px;
+    width: 800px;
     margin: 0 auto;
 }
 
@@ -77,12 +77,11 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    position: relative;
+    bottom: 20px;
 }
 
-.top-content img {
-    width: 900px;
-    margin-bottom: 25px;
-}
+
 
 .top-content .text-container {
     width: 48%;
@@ -182,6 +181,7 @@ footer nav a {
     text-decoration: none;
 }
 
+
 /*Header*/
 
 header {
@@ -189,12 +189,60 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 50px 0;
+    flex-flow: row wrap;
 }
 
 header nav a {
     text-decoration: none;
-    margin: 48px;
+    margin: 38px;
     position: relative;
     top: 10px;
     color: black;
+}
+
+.header-img {
+    width: 900px;
+    margin-top: 60px;
+}
+
+/*About Page css */
+
+.top-about {
+    padding: 0 20px;
+    position: relative;
+    bottom: 20px;
+    border-bottom: 1px dashed black;
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+}
+
+.main-about {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.content-about {
+    height: 420px;
+    width: 385px;
+    border-bottom: 1px dashed black;
+    
+    margin-bottom: 50px;
+}
+
+.content-about h2 {
+    margin-top: 10px;
+}
+
+.content-about button {
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 5px 20px;
+    font-size: 20px;
+}
+
+.bottom-about {
+    margin-bottom: 30px;
+    padding: 10px;
 }
