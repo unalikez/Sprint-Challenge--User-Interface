@@ -181,6 +181,10 @@ footer nav a {
     text-decoration: none;
 }
 
+footer nav a:hover {
+    text-decoration: underline;
+}
+
 
 /*Header*/
 
@@ -194,15 +198,25 @@ header {
 
 header nav a {
     text-decoration: none;
-    margin: 38px;
+    margin: 33px;
     position: relative;
     top: 10px;
     color: black;
+    padding: 5px;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+header nav a:hover {
+    background: black;
+    color: white;
+    border-radius: 5px;
 }
 
 .header-img {
     width: 900px;
     margin-top: 60px;
+    animation: fadeIn 2s;
 }
 
 /*About Page css */
@@ -230,6 +244,10 @@ header nav a {
     margin-bottom: 50px;
 }
 
+.content-about img {
+    animation: fadeIn 2s;
+}
+
 .content-about h2 {
     margin-top: 10px;
 }
@@ -240,9 +258,24 @@ header nav a {
     border-radius: 7px;
     padding: 5px 20px;
     font-size: 20px;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.content-about button:hover {
+    transform: scale(1.2);
+    background: black;
+    color: white;
 }
 
 .bottom-about {
     margin-bottom: 30px;
     padding: 10px;
+}
+
+/*Keyframe animation*/
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
