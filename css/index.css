@@ -3,48 +3,41 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 * {
@@ -77,12 +70,14 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    position: relative;
+    bottom: 20px;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
 .middle-content {
@@ -110,6 +105,46 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.middle-content .boxes .box.box-1 {
+    background: teal;
+}
+
+.middle-content .boxes .box.box-2 {
+    background: gold;
+}
+
+.middle-content .boxes .box.box-3 {
+    background: cadetblue;
+}
+
+.middle-content .boxes .box.box-4 {
+    background: coral;
+}
+
+.middle-content .boxes .box.box-5 {
+    background: crimson;
+}
+
+.middle-content .boxes .box.box-6 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box.box-7 {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box.box-8 {
+    background: hotpink;
+}
+
+.middle-content .boxes .box.box-9 {
+    background: indigo;
+}
+
+.middle-content .boxes .box.box-10 {
+    background: dodgerblue;
 }
 
 .bottom-content {
@@ -143,4 +178,284 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/*Header*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    flex-flow: row wrap;
+}
+
+header nav a {
+    text-decoration: none;
+    margin: 33px;
+    position: relative;
+    top: 10px;
+    color: black;
+    padding: 5px;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+header nav a:hover {
+    background: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.header-img {
+    width: 900px;
+    margin-top: 60px;
+    animation: fadeIn 2s;
+}
+
+
+
+/*About Page css */
+
+.top-about {
+    padding: 0 20px;
+    position: relative;
+    bottom: 20px;
+    border-bottom: 1px dashed black;
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+}
+
+.main-about {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.content-about {
+    height: 420px;
+    width: 385px;
+    border-bottom: 1px dashed black;
+    margin-bottom: 50px;
+}
+
+.content-about img {
+    animation: fadeIn 2s;
+}
+
+.content-about h2 {
+    margin-top: 10px;
+}
+
+.content-about button {
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 5px 20px;
+    font-size: 20px;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.content-about button:hover {
+    transform: scale(1.2);
+    background: black;
+    color: white;
+}
+
+.bottom-about {
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+/*Keyframe animation*/
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive design */
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: auto;
+    }
+    header img {
+        display: none;
+    }
+    header {
+        flex-flow: column wrap;
+        border: 1px solid black;
+        height: 50px;
+        background: black;
+    }
+    header nav a {
+        margin: 0;
+        /* padding: 0; */
+        color: white;
+    }
+    .top-content {
+        flex-direction: column;
+        align-content: center;
+    }
+    .middle-content .boxes {
+        flex-direction: column;
+        align-content: center;
+    }
+    .middle-content {
+        text-align: center;
+    }
+    .bottom-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .bottom-about {
+        text-align: center;
+    }
+    .top-about {
+        text-align: center;
+    }
+    .main-about {
+        flex-direction: column;
+        align-content: center;
+    }
+    footer nav a {
+       margin-left: 40px;
+    }
+}
+
+/*Contact Page */
+.flex-contact {
+	display: flex;
+	justify-content:space-evenly;
+	flex-flow: row wrap;
+}
+
+.flex-contact h2 {
+	font-size: 20px;
+}
+
+.form {
+	height: 420px;
+	width: 400px;
+	background: rgb(199, 54, 78);
+	padding: 2%;
+	border-radius: 10px;
+	margin-right: 20px;
+	margin-top: 50px;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.form input[type="text"], input[type="email"], textarea {
+	width: 100%;
+	height: 40px;
+	padding: 10px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	
+}
+
+.form button {
+	padding: 5px 40px;
+	background-color: white;
+	border-radius: 10px;
+	margin-top: 80px;
+	transition-property: background transform;
+	transition-duration: .2s;
+	width: 75%;
+	height: 50px;
+	font-size: 20px;
+}
+
+.form button:hover {
+	
+	transform: scale(1.1);
+}
+
+
+
+.form-text {
+	border-color: grey;
+}
+
+.form2 {
+	height: 100px;
+	width: 300px;
+	background: rgb(199, 54, 78);
+	color: white;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.form2 button {
+	padding: 5px;
+	border-radius: 10px;
+	transition: transform .3s;
+}
+
+.form2 button:hover {
+    transform: scale(1.1);
+}
+
+.form3 {
+	height: 300px;
+	width: 300px;
+	background: rgb(199, 54, 78);
+	border-radius: 10px;
+	padding: 10%;
+	display: flex;
+	flex-flow: column wrap;
+	align-content: center;
+	justify-content: space-between;
+	margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+.flex-contact2 {
+	display: flex;
+	flex-flow: column wrap;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.form3 p {
+	position: relative;
+	bottom: 15px;
+}
+
+.contact-top {
+	text-align: center;
+	padding: 5%;
+}
+
+.contact-top h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.contact-top p {
+	font-size: 20px;
+}
+
+.contact-img {
+    height: 200px;
+    width: 800px
 }
